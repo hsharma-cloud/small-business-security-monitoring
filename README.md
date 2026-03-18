@@ -14,32 +14,32 @@ The goal of this project is to demonstrate practical experience with infrastruct
 
 The environment represents a small business network with centralized monitoring capabilities. Multiple infrastructure systems forward security telemetry to a centralized monitoring server.
 
-    Internet
-       │
-       ▼
-     fw01
-    Firewall
-       │
-       ▼
-   Internal Network
-       │
- ┌─────┼──────────────┐
- ▼     ▼              ▼
-web01 db01        storage01
- Web   Database     Storage
-Server   Server       Server
-       │
-       ▼
-     siem01
- Security Monitoring Server
+```
+                     Internet
+                        │
+                        ▼
+                     fw01
+                    Firewall
+                        │
+                        ▼
+                Internal Network
+                        │
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+      web01            db01         storage01
+   Web Server      Database Server  Storage Server
+                        │
+                        ▼
+                     siem01
+              Security Monitoring Server
 
- ┌─────────────┴─────────────┐
- ▼                           ▼
-dc01                    Client Systems
-Domain Controller       winclient01
-                        linclient01
-                        kali01
-
+        ┌───────────────┴───────────────┐
+        ▼                               ▼
+      dc01                         Client Systems
+  Domain Controller             winclient01
+                                linclient01
+                                kali01
+```
 ---
 
 ## Infrastructure Components
